@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day5.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Util.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day3.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day4Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day4Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day5Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day5Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/old/Day1Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day1Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/old/Day2Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day2Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/old/Day3Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day3Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day1-1.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day1-1.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day2-1.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day2-1.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day3-1.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day3-1.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day4-1.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day4-1.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day4-2.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day4-2.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day5-1.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day5-1.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day5-2.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day5-2.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
