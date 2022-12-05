@@ -1,3 +1,5 @@
+package old
+
 class Day4 {
 
     fun String.expandIntSet(): Set<Int> {
