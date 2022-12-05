@@ -1,5 +1,7 @@
-import Day2.Element.*
-import Day2.RoundResult.*
+package old
+
+import old.Day2.Element.*
+import old.Day2.RoundResult.*
 
 class Day2 {
 
@@ -49,7 +51,7 @@ class Day2 {
         return score(result,yourMove)
     }
 
-    fun battle(opponent: Element,you: Element): RoundResult {
+    fun battle(opponent: Element, you: Element): RoundResult {
         return when (opponent to you){
             ROCK to PAPER, PAPER to SCISSORS, SCISSORS to ROCK -> WIN
             PAPER to ROCK, SCISSORS to PAPER, ROCK to SCISSORS -> LOSE
@@ -82,7 +84,7 @@ class Day2 {
         return score(result, yourMove)
     }
 
-    fun chooseMove(opponent:Element,result: RoundResult) : Element {
+    fun chooseMove(opponent: Element, result: RoundResult) : Element {
         return when(opponent){
             ROCK ->
                 when (result){

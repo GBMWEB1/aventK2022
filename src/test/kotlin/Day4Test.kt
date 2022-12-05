@@ -1,111 +1,52 @@
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Day3Test {
+class Day4Test {
 
     @Test
-    fun testAsciiConversion() {
-        assertEquals(1, 'a'.asciiValue())
-        assertEquals(26, 'z'.asciiValue())
-        assertEquals(27, 'A'.asciiValue())
-        assertEquals(52, 'Z'.asciiValue())
+    fun testContains(){
+        assertEquals(true, Day4().match(setOf(2,3),setOf(1,2,3,4)))
+        assertEquals(true, Day4().match(setOf(1,2,3,4),setOf(2,3)))
     }
 
     @Test
-    fun testSpitRucksack() {
-        assertEquals(listOf("vJrwpWtwJgWr", "hcsFMMfFFhFp"), Day3().splitRucksack("vJrwpWtwJgWrhcsFMMfFFhFp"))
+    fun testNotContains(){
+        assertEquals(false, Day4().match(setOf(1,2,3,4),setOf(2,3,4,5)))
     }
 
     @Test
-    fun testCompareCompartments() {
-        assertEquals('p', Day3().compareCompartments("vJrwpWtwJgWr", "hcsFMMfFFhFp"))
+    fun testOverlapSections(){
+        assertEquals(true, Day4().overlap("2-8,3-7"))
+        assertEquals(false, Day4().overlap("2-4,6-8"))
     }
 
     @Test
-    fun testGetPriorityItemValue() {
-        assertEquals(16, Day3().getPriorityItemValue("vJrwpWtwJgWrhcsFMMfFFhFp"))
-    }
-
-    @Test
-    fun testGetTotalPriorities() {
-        val rucksacks = listOf(
-            "vJrwpWtwJgWrhcsFMMfFFhFp",
-            "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL",
-            "PmmdzqPrVvPwwTWBwg",
-            "wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn",
-            "ttgJtRGJQctTZtZT",
-            "CrZsJsPPZsGzwwsLwLmpwMDw"
-        )
-        assertEquals(157, Day3().getTotalPriorities(rucksacks))
+    fun testExampleCh1() {
+        val data = Util().readData("day4-1.data")
+        assertEquals(2, Day4().countOverlaps(data))
     }
 
     @Test
     fun testCh1() {
-        val rucksacks = Util().readData("day3-1.data")
-        assertEquals(7850, Day3().getTotalPriorities(rucksacks))
+        val data = Util().readData("day4-2.data")
+        assertEquals(571, Day4().countOverlaps(data))
     }
 
     @Test
-    fun testCommonItemType() {
-        val rucksacks = listOf(
-            "vJrwpWtwJgWrhcsFMMfFFhFp",
-            "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL",
-            "PmmdzqPrVvPwwTWBwg"
-        )
-        assertEquals('r', Day3().getBadge(rucksacks))
+    fun testAnyMatch() {
+        assertEquals(true, Day4().anyMatch(setOf(1,2), setOf(2,3,4)))
+        assertEquals(false, Day4().anyMatch(setOf(1,2), setOf(3,4)))
     }
 
     @Test
-    fun testCommonItemTypeValue() {
-        val rucksacks = listOf(
-            "vJrwpWtwJgWrhcsFMMfFFhFp",
-            "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL",
-            "PmmdzqPrVvPwwTWBwg"
-        )
-        assertEquals(18, Day3().getBadge(rucksacks).asciiValue())
-    }
-
-    @Test
-    fun testBadgesValue() {
-        val rucksacks = listOf(
-            "vJrwpWtwJgWrhcsFMMfFFhFp",
-            "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL",
-            "PmmdzqPrVvPwwTWBwg",
-            "wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn",
-            "ttgJtRGJQctTZtZT",
-            "CrZsJsPPZsGzwwsLwLmpwMDw"
-        )
-        assertEquals(70, Day3().getBadgesValue(rucksacks))
+    fun testExampleCh2() {
+        val data = Util().readData("day4-1.data")
+        assertEquals(4, Day4().countAnyOverlaps(data))
     }
 
     @Test
     fun testCh2() {
-        val rucksacks = Util().readData("day3-1.data")
-        assertEquals(2581, Day3().getBadgesValue(rucksacks))
-    }
-
-    @Test
-    fun testListChunk() {
-        val rucksacks = listOf(
-            "vJrwpWtwJgWrhcsFMMfFFhFp",
-            "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL",
-            "PmmdzqPrVvPwwTWBwg",
-            "wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn",
-            "ttgJtRGJQctTZtZT",
-            "CrZsJsPPZsGzwwsLwLmpwMDw"
-        )
-        val chuncked = listOf(
-            listOf(
-                "vJrwpWtwJgWrhcsFMMfFFhFp",
-                "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL",
-                "PmmdzqPrVvPwwTWBwg"
-            ),
-            listOf(
-                "wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn",
-                "ttgJtRGJQctTZtZT",
-                "CrZsJsPPZsGzwwsLwLmpwMDw"
-            )
-        )
-        assertEquals(chuncked, rucksacks.chunk(3))
+        val data = Util().readData("day4-2.data")
+        assertEquals(917, Day4().countAnyOverlaps(data))
     }
 }

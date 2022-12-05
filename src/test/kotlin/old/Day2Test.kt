@@ -1,5 +1,8 @@
-import Day2.RoundResult.*
-import Day2.Element.*
+package old
+
+import Util
+import old.Day2.RoundResult.*
+import old.Day2.Element.*
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

@@ -1,52 +1,51 @@
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Day4Test {
+class Day5Test {
 
     @Test
-    fun testContains(){
-        assertEquals(true, Day4().match(setOf(2,3),setOf(1,2,3,4)))
-        assertEquals(true, Day4().match(setOf(1,2,3,4),setOf(2,3)))
+    fun testBuildQueue(){
+        val input  = listOf(
+            "[N]",
+            "[Z]",
+            " 1 "
+        )
+        assertEquals(ArrayDeque(listOf('Z','N')), Day5.BuildQueue(input).queues[0])
     }
 
     @Test
-    fun testNotContains(){
-        assertEquals(false, Day4().match(setOf(1,2,3,4),setOf(2,3,4,5)))
+    fun testBuildQueueWithSample(){
+        val data = Util().readData("day5-1.data")
+
+        val expectedResult : List<ArrayDeque<Char>> = listOf(
+            ArrayDeque(listOf('Z','N')),
+            ArrayDeque(listOf('M','C', 'D')),
+            ArrayDeque(listOf('P')))
+        assertEquals(expectedResult, Day5.BuildQueue(data).queues)
     }
 
     @Test
-    fun testOverlapSections(){
-        assertEquals(true, Day4().overlap("2-8,3-7"))
-        assertEquals(false, Day4().overlap("2-4,6-8"))
+    fun testPart1WithSample() {
+        val data = Util().readData("day5-1.data")
+        assertEquals("CMZ", Day5().getWord(data))
     }
 
     @Test
-    fun testExampleCh1() {
-        val data = Util().readData("day4-1.data")
-        assertEquals(2, Day4().countOverlaps(data))
+    fun testPart1() {
+        val data = Util().readData("day5-2.data")
+        assertEquals("SPFMVDTZT", Day5().getWord(data))
     }
 
     @Test
-    fun testCh1() {
-        val data = Util().readData("day4-2.data")
-        assertEquals(571, Day4().countOverlaps(data))
+    fun testPart2WithSample() {
+        val data = Util().readData("day5-1.data")
+        assertEquals("MCD", Day5().getWord2(data))
     }
 
     @Test
-    fun testAnyMatch() {
-        assertEquals(true, Day4().anyMatch(setOf(1,2), setOf(2,3,4)))
-        assertEquals(false, Day4().anyMatch(setOf(1,2), setOf(3,4)))
+    fun testPart2() {
+        val data = Util().readData("day5-2.data")
+        assertEquals("ZFSJBPRFP", Day5().getWord2(data))
     }
 
-    @Test
-    fun testExampleCh2() {
-        val data = Util().readData("day4-1.data")
-        assertEquals(4, Day4().countAnyOverlaps(data))
-    }
-
-    @Test
-    fun testCh2() {
-        val data = Util().readData("day4-2.data")
-        assertEquals(917, Day4().countAnyOverlaps(data))
-    }
 }

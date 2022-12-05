@@ -1,3 +1,5 @@
+package old
+
 class Day1 {
 
     private fun caloriesPerElf(calories: List<String>): List<Int> {

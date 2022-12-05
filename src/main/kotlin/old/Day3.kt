@@ -1,3 +1,5 @@
+package old
+
 fun Char.asciiValue(): Int {
     if (this.isUpperCase()){
         return this.code - 38
