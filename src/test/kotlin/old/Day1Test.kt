@@ -15,7 +15,7 @@ class Day1Test {
 
     @Test
     fun testCh1() {
-        val data = Util().readData("day1-1.data")
+        val data = Util().readData("day1-1.txt")
         val result = Day1().calculateMaxCalories(data)
         assertEquals(70698, result)
     }
@@ -29,7 +29,7 @@ class Day1Test {
 
     @Test
     fun testTop3Ch2(){
-        val data = Util().readData("day1-1.data")
+        val data = Util().readData("day1-1.txt")
         val result = Day1().calculateTop3Cals(data)
         assertEquals(206643, result)
     }

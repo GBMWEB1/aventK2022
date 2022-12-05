@@ -74,7 +74,7 @@ class Day2Test {
 
     @Test
     fun testCh1() {
-        val moves = Util().readData("day2-1.data")
+        val moves = Util().readData("day2-1.txt")
         assertEquals(11841, Day2().scoreGame(moves))
     }
 
@@ -113,7 +113,7 @@ class Day2Test {
 
     @Test
     fun testCh2() {
-        val moves = Util().readData("day2-1.data")
+        val moves = Util().readData("day2-1.txt")
         assertEquals(13022, Day2().scoreTacticalGame(moves))
     }
 

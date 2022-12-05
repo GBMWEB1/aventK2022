@@ -1,3 +1,5 @@
+package old
+
 class Day5 {
 
     class BuildQueue(input: List<String>) {
@@ -59,14 +61,14 @@ class Day5 {
         }
     }
 
-    fun getWord(input: List<String>): String {
+    fun part1(input: List<String>): String {
         val queues = BuildQueue(input)
         val instructions = parseInstructions(input)
         instructions.forEach { queues.move(it) }
         return queues.getWord()
     }
 
-    fun getWord2(input: List<String>): String {
+    fun part2(input: List<String>): String {
         val queues = BuildQueue(input)
         val instructions = parseInstructions(input)
         instructions.forEach { queues.move2(it) }

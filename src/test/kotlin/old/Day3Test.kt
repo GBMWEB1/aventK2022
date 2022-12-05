@@ -44,7 +44,7 @@ class Day3Test {
 
     @Test
     fun testCh1() {
-        val rucksacks = Util().readData("day3-1.data")
+        val rucksacks = Util().readData("day3-1.txt")
         assertEquals(7850, Day3().getTotalPriorities(rucksacks))
     }
 
@@ -83,7 +83,7 @@ class Day3Test {
 
     @Test
     fun testCh2() {
-        val rucksacks = Util().readData("day3-1.data")
+        val rucksacks = Util().readData("day3-1.txt")
         assertEquals(2581, Day3().getBadgesValue(rucksacks))
     }
 
