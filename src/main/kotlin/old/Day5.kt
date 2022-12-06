@@ -1,5 +1,15 @@
 package old
 
+data class Move(val quantity: Int, val fromQueue: Int, val toQueue: Int){
+    companion object {
+        fun of (line:String): Move{
+            return line.split(" ")
+                .filter { word -> !listOf("move", "from", "to").contains(word) }
+                .map { it.toInt() }
+                .let { Move(it[0], it[1], it[2]) }
+        }
+    }
+}
 class Day5 {
 
     class BuildQueue(input: List<String>) {
@@ -9,40 +19,31 @@ class Day5 {
         private fun build(input: List<String>): List<ArrayDeque<Char>> {
             val queuesPos = input.indexOfFirst { line -> !line.contains("[") }
 
-            val queues = input[queuesPos].substringAfterLast("  ").trim().toInt()
-            val result : MutableList<ArrayDeque<Char>> = mutableListOf()
-            for (colIndex in 1..queues){
-                val stack = ArrayDeque<Char>()
-                val col = 1 + ((colIndex-1) * 4)
+            val noOfStacks = input[queuesPos].substringAfterLast("  ").trim().toInt()
+            val stacks = List(noOfStacks) { ArrayDeque<Char>()}
+            for (stackIndex in 0 until noOfStacks){
+                val col = 1 + (stackIndex * 4)
                 for (row in queuesPos-1 downTo 0) {
-                    if (input[row].length> col && input[row][col].isLetter() ) {
-                        stack.add(input[row][col])
+                    if (input[row][col].isLetter() ) {
+                        stacks[stackIndex].add(input[row][col])
                     }
                 }
-                result.add(stack)
             }
-            return result
+            return stacks
         }
 
-        fun move(words: List<Int>){
-            val num = words[0]
-            val fromQueue = words[1]
-            val toQueue = words[2]
-
-            for (movement in 1..num){
-                queues[toQueue-1].addLast(queues[fromQueue-1].removeLast())
+        fun move(move: Move){
+            repeat(move.quantity){
+                queues[move.toQueue-1].addLast(queues[move.fromQueue-1].removeLast())
             }
         }
 
-        fun move2(words: List<Int>){
-            val num = words[0]
-            val fromQueue = words[1]
-            val toQueue = words[2]
+        fun move2(move: Move){
             val toMove = mutableListOf<Char>()
-            for (movement in 1..num){
-                toMove.add(queues[fromQueue-1].removeLast())
+            repeat(move.quantity){
+                toMove.add(queues[move.fromQueue-1].removeLast())
             }
-            queues[toQueue-1].addAll(toMove.reversed())
+            queues[move.toQueue-1].addAll(toMove.reversed())
         }
 
         fun getWord(): String{
@@ -50,28 +51,21 @@ class Day5 {
         }
     }
 
-    private fun parseInstructions(input: List<String>): List<List<Int>> {
-        val queuesPos = input.indexOfFirst { line -> !line.contains("[") }
-        val instructionsPos = queuesPos +2
-        val instructions = input.subList(instructionsPos, input.size)
-        return instructions.map { instruction -> instruction
-            .split(" ")
-            .filter { word -> !listOf("move", "from", "to").contains(word) }
-            .map { it.toInt() }
-        }
+    private fun parseMoves(input: List<String>): List<Move> {
+        return input
+            .filter { it.contains("move") }
+            .map { Move.of(it) }
     }
 
     fun part1(input: List<String>): String {
         val queues = BuildQueue(input)
-        val instructions = parseInstructions(input)
-        instructions.forEach { queues.move(it) }
+        parseMoves(input).forEach { queues.move(it) }
         return queues.getWord()
     }
 
     fun part2(input: List<String>): String {
         val queues = BuildQueue(input)
-        val instructions = parseInstructions(input)
-        instructions.forEach { queues.move2(it) }
+        parseMoves(input).forEach { queues.move2(it) }
         return queues.getWord()
     }
 }

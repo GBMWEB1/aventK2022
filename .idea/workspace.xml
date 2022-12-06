@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Move day 4">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day5.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day5Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day6-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day6-2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day6.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day5Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day6Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/old/Day1Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day1Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/old/Day2Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day2Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/old/Day3Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day3Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/old/Day4Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day4Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day1-1.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day1-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day2-1.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day2-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day3-1.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day3-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day4-1.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day4-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day4-2.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day4-2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day5-1.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day5-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day5-2.data" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day5-2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day6.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day6Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day6Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/day6-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day6-1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/day6-2.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +82,37 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day6Test (4)">
+  <component name="RunManager" selected="JUnit.Day6Test (2)">
+    <configuration name="Day5Test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aventK2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="old.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="old" />
+      <option name="MAIN_CLASS_NAME" value="old.Day5Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day5Test (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aventK2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="old.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="old" />
+      <option name="MAIN_CLASS_NAME" value="old.Day5Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Day6Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
@@ -113,45 +131,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day6Test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day6Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Day6Test" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day6Test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aventK2022" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day6Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="old in aventK2022" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aventK2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="old.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="old" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day6Test (4)" />
-        <item itemvalue="JUnit.old in aventK2022" />
-        <item itemvalue="JUnit.Day6Test (3)" />
         <item itemvalue="JUnit.Day6Test (2)" />
         <item itemvalue="JUnit.Day6Test (1)" />
+        <item itemvalue="JUnit.Day6Test" />
+        <item itemvalue="JUnit.Day5Test (5)" />
+        <item itemvalue="JUnit.Day5Test (4)" />
       </list>
     </recent_temporary>
   </component>
