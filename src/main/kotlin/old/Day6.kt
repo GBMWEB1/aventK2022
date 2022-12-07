@@ -1,3 +1,5 @@
+package old
+
 class Day6 {
     fun getMarker(input: String, markerSize: Int = 4): Int {
         for (pos in markerSize until input.length) {

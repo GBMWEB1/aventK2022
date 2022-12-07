@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Move day 4">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day6.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Day7Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day7-1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day7-2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day6.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day5.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day6Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day6Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day6-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day6-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day6-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day7.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day6Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day6Test.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,59 +83,47 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day6Test (2)">
-    <configuration name="Day5Test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aventK2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="old.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="old" />
-      <option name="MAIN_CLASS_NAME" value="old.Day5Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day5Test (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aventK2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="old.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="old" />
-      <option name="MAIN_CLASS_NAME" value="old.Day5Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day6Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Day7Test (3)">
+    <configuration name="Day7Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day6Test" />
+      <option name="MAIN_CLASS_NAME" value="Day7Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day6Test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day7Test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day6Test" />
+      <option name="MAIN_CLASS_NAME" value="Day7Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day6Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day7Test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day6Test" />
+      <option name="MAIN_CLASS_NAME" value="Day7Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day7Test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aventK2022" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Day7Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day7Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aventK2022" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Day7Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day6Test (2)" />
-        <item itemvalue="JUnit.Day6Test (1)" />
-        <item itemvalue="JUnit.Day6Test" />
-        <item itemvalue="JUnit.Day5Test (5)" />
-        <item itemvalue="JUnit.Day5Test (4)" />
+        <item itemvalue="JUnit.Day7Test (3)" />
+        <item itemvalue="JUnit.Day7Test (2)" />
+        <item itemvalue="JUnit.Day7Test (4)" />
+        <item itemvalue="JUnit.Day7Test (1)" />
+        <item itemvalue="JUnit.Day7Test" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670256359818</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Move day 4">
+      <created>1670330596051</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670330596052</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
