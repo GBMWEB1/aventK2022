@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Move day 8 Prep">
+    <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day8.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day8.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day8Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day8Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day8-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day8-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/day8-2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day8-2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day8Test (3)">
+  <component name="RunManager" selected="JUnit.Day8Test (2)">
     <configuration name="Day8Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
@@ -109,6 +107,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day8Test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aventK2022" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Day8Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Day8Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
@@ -118,23 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day8Test.testPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aventK2022" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day8Test" />
-      <option name="METHOD_NAME" value="testPart2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day8Test (3)" />
-        <item itemvalue="JUnit.Day8Test" />
-        <item itemvalue="JUnit.Day8Test (1)" />
-        <item itemvalue="JUnit.Day8Test.testPart2" />
         <item itemvalue="JUnit.Day8Test (2)" />
+        <item itemvalue="JUnit.Day8Test" />
+        <item itemvalue="JUnit.Day8Test (4)" />
+        <item itemvalue="JUnit.Day8Test (3)" />
+        <item itemvalue="JUnit.Day8Test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670449704443</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Day 8">
+      <created>1670490258670</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670490258670</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,7 +189,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Move day 4" />
     <MESSAGE value="Move day 8 Prep" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move day 8 Prep" />
+    <MESSAGE value="Day 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -202,12 +207,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/Day8.kt</url>
-          <line>115</line>
+          <line>117</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/Day8.kt</url>
-          <line>80</line>
+          <line>82</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">

@@ -25,7 +25,7 @@ class Day8Test {
     )
     @Test
     fun testInnerLists() {
-        assertEquals(listOf(2,5,5), Day8.Grid(sampleData).getLeft(1,3))
+        assertEquals(listOf(5,5,2), Day8.Grid(sampleData).getLeft(1,3))
         assertEquals(listOf(2), Day8.Grid(sampleData).getRight(1,3))
         assertEquals(listOf(7), Day8.Grid(sampleData).getTop(1,3))
         assertEquals(listOf(3,4,9), Day8.Grid(sampleData).getBottom(1,3))

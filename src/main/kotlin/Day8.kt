@@ -28,19 +28,7 @@ class Day8 {
         }
 
         fun getTop(row: Int, col: Int) : List<Int> {
-            return getColumn(col).subList(0, row)
-        }
-
-        fun getBottom(row: Int, col: Int) : List<Int> {
-            return getColumn(col).subList(row+1, getRowCount())
-        }
-
-        fun getLeft(row: Int, col: Int) : List<Int> {
-            return getRow(row).subList(0, col)
-        }
-
-        fun getRight(row: Int, col: Int) : List<Int> {
-            return getRow(row).subList(col+1, getColumnCount())
+            return getColumn(col).subList(0, row).reversed()
         }
 
         fun isVisibleTop(row: Int, col: Int) : Boolean {
@@ -48,9 +36,27 @@ class Day8 {
             return getTop(row, col).none { it >= tree }
         }
 
+        fun getBottom(row: Int, col: Int) : List<Int> {
+            return getColumn(col).subList(row+1, getRowCount())
+        }
+
+        fun isVisibleBottom(row: Int, col: Int) : Boolean {
+            val tree = getCell(row, col)
+            return getBottom(row, col).none { it >= tree }
+        }
+
+
+        fun getLeft(row: Int, col: Int) : List<Int> {
+            return getRow(row).subList(0, col).reversed()
+        }
+
         fun isVisibleLeft(row: Int, col: Int) : Boolean {
             val tree = getCell(row, col)
             return getLeft(row, col).none { it >= tree }
+        }
+
+        fun getRight(row: Int, col: Int) : List<Int> {
+            return getRow(row).subList(col+1, getColumnCount())
         }
 
         fun isVisibleRight(row: Int, col: Int) : Boolean {
@@ -58,10 +64,6 @@ class Day8 {
             return getRight(row, col).none { it >= tree }
         }
 
-        fun isVisibleBottom(row: Int, col: Int) : Boolean {
-            val tree = getCell(row, col)
-            return getBottom(row, col).none { it >= tree }
-        }
 
         private fun countScore(tree: Int, otherTrees: List<Int>): Int{
             var score = 0
@@ -78,9 +80,9 @@ class Day8 {
 
         fun getScenicScore(row: Int, col: Int): Int {
             val tree = getCell(row, col)
-            val leftScore = countScore(tree, getLeft(row, col).reversed())
+            val leftScore = countScore(tree, getLeft(row, col))
             val rightScore = countScore(tree, getRight(row, col))
-            val topScore = countScore(tree, getTop(row, col).reversed())
+            val topScore = countScore(tree, getTop(row, col))
             val bottomScore = countScore(tree, getBottom(row, col))
             return leftScore * rightScore * topScore * bottomScore
         }
