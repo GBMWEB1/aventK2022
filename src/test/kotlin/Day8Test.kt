@@ -97,7 +97,7 @@ class Day8Test {
             "33549",
             "35390"
         )
-        assertEquals(4, Day8.Grid(sampleData).getScenicScore(1,2));
+        assertEquals(4, Day8.Grid(sampleData).getScenicScore(1,2))
         assertEquals(8, Day8.Grid(sampleData).getScenicScore(3,2))
     }
 
