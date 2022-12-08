@@ -45,7 +45,6 @@ class Day8 {
             return getBottom(row, col).none { it >= tree }
         }
 
-
         fun getLeft(row: Int, col: Int) : List<Int> {
             return getRow(row).subList(0, col).reversed()
         }
