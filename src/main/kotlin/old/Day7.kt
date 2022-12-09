@@ -13,7 +13,6 @@ class Day7 {
                 return input.split(" ").let { DeviceFile(it[1], it[0].toInt()) }
             }
         }
-
     }
 
     class DeviceDirectory(

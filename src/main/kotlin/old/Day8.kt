@@ -1,4 +1,4 @@
-
+package old
 class Day8 {
 
     class Grid (input : List<String>){
@@ -63,6 +63,14 @@ class Day8 {
             return getRight(row, col).none { it >= tree }
         }
 
+        fun getScenicScore(row: Int, col: Int): Int {
+            val tree = getCell(row, col)
+            val leftScore = countScore(tree, getLeft(row, col))
+            val rightScore = countScore(tree, getRight(row, col))
+            val topScore = countScore(tree, getTop(row, col))
+            val bottomScore = countScore(tree, getBottom(row, col))
+            return leftScore * rightScore * topScore * bottomScore
+        }
 
         private fun countScore(tree: Int, otherTrees: List<Int>): Int{
             var score = 0
@@ -77,29 +85,10 @@ class Day8 {
             return score
         }
 
-        fun getScenicScore(row: Int, col: Int): Int {
-            val tree = getCell(row, col)
-            val leftScore = countScore(tree, getLeft(row, col))
-            val rightScore = countScore(tree, getRight(row, col))
-            val topScore = countScore(tree, getTop(row, col))
-            val bottomScore = countScore(tree, getBottom(row, col))
-            return leftScore * rightScore * topScore * bottomScore
-        }
-
     }
 
     fun getPart1(commands: List<String>): Int{
         return countEdges(commands) + countInterior(commands)
-    }
-    fun getPart2(input: List<String>): Int{
-        val grid = Grid(input)
-        var maxScore = 0
-        for (row in 0 until grid.getRowCount()) {
-            for (col in 0 until grid.getColumnCount()) {
-              maxScore = maxOf(maxScore, grid.getScenicScore(row,col))
-            }
-        }
-        return maxScore
     }
 
     fun countEdges(input: List<String>): Int {
@@ -125,4 +114,17 @@ class Day8 {
         }
         return visibleCount
     }
+
+    fun getPart2(input: List<String>): Int{
+        val grid = Grid(input)
+        var maxScore = 0
+        for (row in 0 until grid.getRowCount()) {
+            for (col in 0 until grid.getColumnCount()) {
+              maxScore = maxOf(maxScore, grid.getScenicScore(row,col))
+            }
+        }
+        return maxScore
+    }
+
+
 }
