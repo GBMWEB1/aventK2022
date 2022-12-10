@@ -84,6 +84,9 @@ class Day10Test {
         assertEquals(14620, a+b+c+d+e+f)
     }
 
+    ///////////
+    // Part 2//
+    ///////////
     @Test
     fun testCrt(){
         val cpu = Day10.CPU(Util().readData("day10-1.txt"))
@@ -196,17 +199,4 @@ class Day10Test {
         cpu.cycleUntilEnd()
         cpu.getCrtRows().forEach { println(it) }
     }
-
-
-//    @Test
-//    fun testPart1() {
-//        val data = Util().readData("day9-1.txt")
-//        val rope = Day9.Rope(9)
-//        rope.init(headStart = Pos(1000,1000), Pos(1000,1000))
-//        data.forEach({rope.move(it)})
-//
-//        assertEquals(2541, rope.positions.size)
-//    }
-
-
 }

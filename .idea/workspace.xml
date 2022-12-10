@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 9 - Refactor">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day10-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day10-3.txt" afterDir="false" />
+    <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 10 - Complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day10.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day10.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day10Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day10Test.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670500862285</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Day 10 - Complete">
+      <created>1670662966871</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670662966871</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,7 +222,8 @@
     <MESSAGE value="Move day 8 Prep" />
     <MESSAGE value="Day 8" />
     <MESSAGE value="Day 8 - Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 8 - Refactor" />
+    <MESSAGE value="Day 10 - Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 10 - Complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
