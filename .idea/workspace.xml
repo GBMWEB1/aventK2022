@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 9 - Refactor">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day10-1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day10-2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day10-3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day10.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day10.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day10Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day10Test.kt" afterDir="false" />
@@ -80,7 +81,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day10Test.testLargeSample">
+  <component name="RunManager" selected="JUnit.Day10Test.testPart2">
     <configuration name="Day10Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
@@ -90,11 +91,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day10Test.testFithCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day10Test.testCrtSample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Day10Test" />
-      <option name="METHOD_NAME" value="testFithCycle" />
+      <option name="METHOD_NAME" value="testCrtSample" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,21 +111,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day10Test.testSecondThirdCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day10Test.testPart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Day10Test" />
-      <option name="METHOD_NAME" value="testSecondThirdCycle" />
+      <option name="METHOD_NAME" value="testPart1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day10Test.testThirdCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day10Test.testPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Day10Test" />
-      <option name="METHOD_NAME" value="testThirdCycle" />
+      <option name="METHOD_NAME" value="testPart2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day10Test.testLargeSample" />
-        <item itemvalue="JUnit.Day10Test.testFithCycle" />
-        <item itemvalue="JUnit.Day10Test.testThirdCycle" />
+        <item itemvalue="JUnit.Day10Test.testPart2" />
         <item itemvalue="JUnit.Day10Test" />
-        <item itemvalue="JUnit.Day10Test.testSecondThirdCycle" />
+        <item itemvalue="JUnit.Day10Test.testLargeSample" />
+        <item itemvalue="JUnit.Day10Test.testPart1" />
+        <item itemvalue="JUnit.Day10Test.testCrtSample" />
       </list>
     </recent_temporary>
   </component>
@@ -243,9 +244,14 @@
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Day10.kt</url>
-          <line>23</line>
-          <option name="timeStamp" value="52" />
+          <url>file://$PROJECT_DIR$/src/test/kotlin/Day10Test.kt</url>
+          <line>58</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/test/kotlin/Day10Test.kt</url>
+          <line>59</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/test/kotlin/old/Day3Test.kt</url>
