@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 8 - Refactor">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day10.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day9.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Day10Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day9Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day9-1.txt" afterDir="false" />
+    <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 9 - Refactor">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day10-1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day8.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day8.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day7.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day8Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day8Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day10.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day10.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day10Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day10Test.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,78 +80,51 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day9Test (1)">
-    <configuration name="Day9Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Day10Test.testLargeSample">
+    <configuration name="Day10Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="old.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="old" />
-      <option name="MAIN_CLASS_NAME" value="old.Day9Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Day10Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day9Test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day10Test.testFithCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="old.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="old" />
-      <option name="MAIN_CLASS_NAME" value="old.Day9Test" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Day10Test" />
+      <option name="METHOD_NAME" value="testFithCycle" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day9Test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day10Test.testLargeSample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="old.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="old" />
-      <option name="MAIN_CLASS_NAME" value="old.Day9Test" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Day10Test" />
+      <option name="METHOD_NAME" value="testLargeSample" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day9Test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day10Test.testSecondThirdCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="old.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="old" />
-      <option name="MAIN_CLASS_NAME" value="old.Day9Test" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Day10Test" />
+      <option name="METHOD_NAME" value="testSecondThirdCycle" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day9Test.testMoveLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day10Test.testThirdCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="old.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="old" />
-      <option name="MAIN_CLASS_NAME" value="old.Day9Test" />
-      <option name="METHOD_NAME" value="testMoveLeft" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Day10Test" />
+      <option name="METHOD_NAME" value="testThirdCycle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day9Test (1)" />
-        <item itemvalue="JUnit.Day9Test (3)" />
-        <item itemvalue="JUnit.Day9Test.testMoveLeft" />
-        <item itemvalue="JUnit.Day9Test (2)" />
-        <item itemvalue="JUnit.Day9Test (4)" />
+        <item itemvalue="JUnit.Day10Test.testLargeSample" />
+        <item itemvalue="JUnit.Day10Test.testFithCycle" />
+        <item itemvalue="JUnit.Day10Test.testThirdCycle" />
+        <item itemvalue="JUnit.Day10Test" />
+        <item itemvalue="JUnit.Day10Test.testSecondThirdCycle" />
       </list>
     </recent_temporary>
   </component>
@@ -273,6 +241,11 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/old/Day9.kt</url>
           <line>18</line>
           <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Day10.kt</url>
+          <line>23</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/test/kotlin/old/Day3Test.kt</url>
