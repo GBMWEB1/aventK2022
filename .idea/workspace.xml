@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 10 - Complete">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day10.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Day11Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day11-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day11-2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day10.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day11.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day10Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day10Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day11.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day11.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day11Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day11Test.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +99,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day11Test.testPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aventK2022" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Day11Test" />
+      <option name="METHOD_NAME" value="testPart2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Day11Test.testPart2Round1000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
@@ -113,21 +119,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day11Test.testRound1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day11Test.testPart2Round10000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Day11Test" />
-      <option name="METHOD_NAME" value="testRound1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day11Test.testRound20ItemsProcessed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aventK2022" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day11Test" />
-      <option name="METHOD_NAME" value="testRound20ItemsProcessed" />
+      <option name="METHOD_NAME" value="testPart2Round10000" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,10 +132,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Day11Test" />
-        <item itemvalue="JUnit.Day11Test.testRound1" />
-        <item itemvalue="JUnit.Day11Test.testRound20ItemsProcessed" />
-        <item itemvalue="JUnit.Day11Test.testParseMonkeyItems" />
+        <item itemvalue="JUnit.Day11Test.testPart2" />
+        <item itemvalue="JUnit.Day11Test.testPart2Round10000" />
         <item itemvalue="JUnit.Day11Test.testPart2Round1000" />
+        <item itemvalue="JUnit.Day11Test.testParseMonkeyItems" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +268,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/Day11.kt</url>
-          <line>126</line>
+          <line>131</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>

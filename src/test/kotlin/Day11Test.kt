@@ -132,26 +132,33 @@ class Day11Test {
         assertEquals(103, monkeys[3].itemsProcessed)
     }
 
-//    @Test
-//    fun testPart2Round1000() {
-//        val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"), false)
-//        Day11().processRounds(1000, monkeys);
-//
-//        assertEquals(5204, monkeys[0].itemsProcessed)
-//        assertEquals(4792, monkeys[1].itemsProcessed)
-//        assertEquals(199, monkeys[2].itemsProcessed)
-//        assertEquals(5192, monkeys[3].itemsProcessed)
-//    }
+    @Test
+    fun testPart2Round1000() {
+        val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"), false)
+        Day11().processRounds(1000, monkeys);
 
-//    @Test
-//    fun testPart2Round10000() {
-//        val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"), false)
-//        Day11().processRounds(10_000, monkeys);
-//
-//        assertEquals(52166, monkeys[0].itemsProcessed)
-//        assertEquals(47830, monkeys[1].itemsProcessed)
-//        assertEquals(1938, monkeys[2].itemsProcessed)
-//        assertEquals(52013, monkeys[3].itemsProcessed)
-//    }
+        assertEquals(5204, monkeys[0].itemsProcessed)
+        assertEquals(4792, monkeys[1].itemsProcessed)
+        assertEquals(199, monkeys[2].itemsProcessed)
+        assertEquals(5192, monkeys[3].itemsProcessed)
+    }
 
+    @Test
+    fun testPart2Round10000() {
+        val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"), false)
+        Day11().processRounds(10000, monkeys);
+
+        assertEquals(52166, monkeys[0].itemsProcessed)
+        assertEquals(47830, monkeys[1].itemsProcessed)
+        assertEquals(1938, monkeys[2].itemsProcessed)
+        assertEquals(52013, monkeys[3].itemsProcessed)
+        assertEquals(2713310158, Day11().getMonkeyBusiness(monkeys))
+    }
+
+    @Test
+    fun testPart2() {
+        val monkeys = Day11().createMonkeys(Util().readData("day11-2.txt"), false)
+        Day11().processRounds(10000, monkeys);
+        assertEquals(13606755504, Day11().getMonkeyBusiness(monkeys))
+    }
 }

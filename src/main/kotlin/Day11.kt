@@ -40,8 +40,9 @@ class Day11 {
 
         private lateinit var monkeyFalse: Monkey
         private lateinit var monkeyTrue: Monkey
+        private var overallMode: Int =0;
 
-        private val items = ArrayDeque(itemList)
+        private val items = ArrayDeque(itemList.map { it })
         var itemsProcessed = 0
         fun getItems(): List<BigInteger>{
             return items.toList()
@@ -75,6 +76,9 @@ class Day11 {
         fun link(monkeys: List<Monkey>) {
             monkeyTrue = monkeys[monkeyTrueIndex]
             monkeyFalse = monkeys[monkeyFalseIndex]
+
+            overallMode =
+                monkeys.map { it.testDiv.toLong() }.fold(1L) { acc, l -> acc * l }.toInt();
         }
 
         fun processAllItems(){
@@ -85,6 +89,9 @@ class Day11 {
 
         private fun processItem(item : BigInteger){
             var item = operation.perform(item)
+
+            item %= overallMode.toBigInteger();
+
             if (reduceWorry) {
                 item = getBored(item)
             }
@@ -98,7 +105,7 @@ class Day11 {
         }
 
         private fun addItem(item: BigInteger) {
-            items.add(item)
+            items.add(item )
         }
     }
 
@@ -116,18 +123,16 @@ class Day11 {
     }
 
     fun processRounds(count: Int, monkeys : List<Monkey>){
-        var round = 0;
         repeat(count){
-            println(round++)
             processRound(monkeys)
         }
     }
 
-    fun getMonkeyBusiness(monkeys : List<Monkey>): Int{
+    fun getMonkeyBusiness(monkeys : List<Monkey>): Long{
         return monkeys.map { it.itemsProcessed }
             .sortedDescending()
             .take(2)
-            .let { it[0] * it[1] }
+            .let { it[0].toLong() * it[1].toLong() }
     }
 
 }
