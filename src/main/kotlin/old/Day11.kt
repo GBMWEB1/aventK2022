@@ -1,4 +1,5 @@
-import old.chunk
+package old
+
 import java.lang.Exception
 import java.math.BigInteger
 
@@ -20,11 +21,11 @@ class Day11 {
         }
 
         fun performInt(value: Long): Int{
-            return perform(BigInteger.valueOf(value)).toInt();
+            return perform(BigInteger.valueOf(value)).toInt()
         }
 
         companion object{
-            fun of(line:String): Operation{
+            fun of(line:String): Operation {
                 return Operation(line.substring(19))
             }
         }
@@ -40,19 +41,17 @@ class Day11 {
 
         private lateinit var monkeyFalse: Monkey
         private lateinit var monkeyTrue: Monkey
-        private var overallMode: Int =0;
+
+        private var overallMod: Int =0
 
         private val items = ArrayDeque(itemList.map { it })
         var itemsProcessed = 0
-        fun getItems(): List<BigInteger>{
-            return items.toList()
-        }
 
         fun getItemsInt(): List<Int>{
             return items.toList().map { it.toInt() }
         }
         companion object{
-            fun of(lines: List<String>, reduceWorry: Boolean): Monkey{
+            fun of(lines: List<String>, reduceWorry: Boolean): Monkey {
                 val items = lines[1]
                     .substring(18)
                     .split(", ")
@@ -73,12 +72,12 @@ class Day11 {
             }
         }
 
-        fun link(monkeys: List<Monkey>) {
+        fun init(monkeys: List<Monkey>) {
             monkeyTrue = monkeys[monkeyTrueIndex]
             monkeyFalse = monkeys[monkeyFalseIndex]
 
-            overallMode =
-                monkeys.map { it.testDiv.toLong() }.fold(1L) { acc, l -> acc * l }.toInt();
+            overallMod =
+                monkeys.map { it.testDiv.toLong() }.fold(1L) { acc, l -> acc * l }.toInt()
         }
 
         fun processAllItems(){
@@ -89,14 +88,15 @@ class Day11 {
 
         private fun processItem(item : BigInteger){
             var item = operation.perform(item)
-
-            item %= overallMode.toBigInteger();
-
             if (reduceWorry) {
                 item = getBored(item)
             }
-            val mod = item % testDiv
-            if ( mod.toInt() == 0){
+
+            // truncate the value (// as each monkey only cares about its own divisor, trunking here of the product of
+            // all divisors ensure that the values are kept small
+            item %= overallMod.toBigInteger()
+
+            if ( (item % testDiv).toInt() == 0){
                 monkeyTrue.addItem(item)
             } else{
                 monkeyFalse.addItem(item)
@@ -115,7 +115,7 @@ class Day11 {
             .chunk(6)
             .map { Monkey.of(it, reduceWorry) }
 
-        monkeys.forEach { it.link(monkeys) }
+        monkeys.forEach { it.init(monkeys) }
         return monkeys
     }
     fun processRound(monkeys : List<Monkey>){

@@ -1,5 +1,6 @@
-import old.Day10
-import old.chunk
+package old
+
+import Util
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import java.math.BigInteger
