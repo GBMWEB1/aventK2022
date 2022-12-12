@@ -7,6 +7,48 @@ class Day12 {
         var left: Cell? = null
         var right: Cell? = null
 
+        fun canVisit(targetCell: Cell?): Boolean {
+            if (targetCell == null || targetCell.navigated) {
+                return false
+            }
+            if (isStart) {
+                return true
+            }
+            if (targetCell.isEnd) {
+                if (character == 'z') {
+                    return true
+                }
+                return false
+            }
+            if (targetCell.character - character < 2) {
+                return true
+            }
+            return false
+        }
+
+        fun navigate(
+            ): List<Cell> {
+            if (navigated) {
+                return listOf()
+            }
+            val cellsToNavigate = mutableListOf<Cell>()
+            if (canVisit(right)) {
+                cellsToNavigate.add(right!!)
+            }
+            if (canVisit(left)) {
+                cellsToNavigate.add(left!!)
+            }
+            if (canVisit(top)) {
+                cellsToNavigate.add(top!!)
+            }
+            if (canVisit(bottom)) {
+                cellsToNavigate.add(bottom!!)
+            }
+            navigated = true
+
+            return cellsToNavigate
+        }
+
         companion object {
             fun of(character: Char, row: Int, col: Int): Cell {
                 val isEnd = character == 'E'
@@ -50,71 +92,28 @@ class Day12 {
             return this
         }
 
-        private fun getCell(row: Int, col: Int): Cell {
-            return cells[row][col]
-        }
-
-        private fun canVisit(targetCell: Cell?, currentCell: Cell): Boolean {
-            if (targetCell == null || targetCell.navigated) {
-                return false
-            }
-            if (currentCell.isStart) {
-                return true
-            }
-            if (targetCell.isEnd) {
-                if (currentCell.character == 'z') {
-                    return true
-                }
-                return false
-            }
-            if (targetCell.character - currentCell.character < 2) {
-                return true
-            }
-            return false
-        }
-
         private fun reset(){
             cells.flatten().forEach { it.navigated = false }
         }
 
+        private fun getCell(row: Int, col: Int): Cell {
+            return cells[row][col]
+        }
+
         fun navigateToEnd(startCells : List<Cell> = listOf(cells.flatten().first { it.isStart }) ): Int {
             reset()
-            var toNavigate = startCells
+            var cellsNavigated = startCells
             var cycles = 0
-            while (toNavigate.none { it.isEnd }) {
+            while (cellsNavigated.none { it.isEnd }) {
                 cycles++
-                toNavigate = toNavigate.flatMap { navigate(it) }
+                cellsNavigated = cellsNavigated.flatMap { it.navigate() }
             }
             return cycles
         }
 
-        fun countFromA() : Int{
+        fun navigateFromA() : Int{
             val startCells = cells.flatten().filter { it.isStart || it.character == 'a' }
             return navigateToEnd(startCells)
-        }
-
-        private fun navigate(
-            cell: Cell
-        ): List<Cell> {
-            if (cell.navigated) {
-                return listOf()
-            }
-            val cellsToNavigate = mutableListOf<Cell>()
-            if (canVisit(cell.right, cell)) {
-                cellsToNavigate.add(cell.right!!)
-            }
-            if (canVisit(cell.left, cell)) {
-                cellsToNavigate.add(cell.left!!)
-            }
-            if (canVisit(cell.top, cell)) {
-                cellsToNavigate.add(cell.top!!)
-            }
-            if (canVisit(cell.bottom, cell)) {
-                cellsToNavigate.add(cell.bottom!!)
-            }
-            cell.navigated = true
-
-            return cellsToNavigate
         }
     }
 

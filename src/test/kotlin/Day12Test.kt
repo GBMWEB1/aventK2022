@@ -59,15 +59,13 @@ class Day12Test {
                 "acctuvwj",
                 "abdefghi"))
             .init()
-        assertEquals(29, grid.countFromA())
+        assertEquals(29, grid.navigateFromA())
     }
 
     @Test
     fun testPart2() {
         val grid = Day12.Grid(Util().readData("day12.txt"))
             .init()
-        assertEquals(399, grid.countFromA())
+        assertEquals(399, grid.navigateFromA())
     }
-
-
 }

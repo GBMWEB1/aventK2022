@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 10 - Complete">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day12.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Day12Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day12.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day11.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day11.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day11Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day11Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day12.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day12.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day12Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day12Test.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +80,7 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.Day12Test">
-    <configuration name="Day12Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day12Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Day12Test" />
@@ -92,12 +89,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day12Test.testPart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day12Test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Day12Test" />
-      <option name="METHOD_NAME" value="testPart1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day12Test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aventK2022" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Day12Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day12Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aventK2022" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Day12Test" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,33 +126,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day12Test.testSample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aventK2022" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day12Test" />
-      <option name="METHOD_NAME" value="testSample" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day12Test.testSampleP2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aventK2022" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day12Test" />
-      <option name="METHOD_NAME" value="testSampleP2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Day12Test" />
+        <item itemvalue="JUnit.Day12Test (3)" />
+        <item itemvalue="JUnit.Day12Test (2)" />
+        <item itemvalue="JUnit.Day12Test (1)" />
         <item itemvalue="JUnit.Day12Test.testPart2" />
-        <item itemvalue="JUnit.Day12Test.testSampleP2" />
-        <item itemvalue="JUnit.Day12Test.testPart1" />
-        <item itemvalue="JUnit.Day12Test.testSample" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670663065699</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Day 10 - Complete">
+      <created>1670862407132</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670862407132</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,17 +295,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/Day12.kt</url>
-          <line>64</line>
-          <option name="timeStamp" value="93" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Day12.kt</url>
-          <line>98</line>
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Day12.kt</url>
-          <line>92</line>
+          <line>115</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
