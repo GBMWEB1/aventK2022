@@ -1,3 +1,5 @@
+package old
+
 class Day12 {
 
     data class Cell(val row: Int, val col: Int, val character: Char, val isStart: Boolean, val isEnd: Boolean) {

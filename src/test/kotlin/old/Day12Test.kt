@@ -1,3 +1,6 @@
+package old
+
+import Util
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
@@ -14,7 +17,6 @@ class Day12Test {
         val grid = Day12.Grid(listOf("EzyS")).init()
         assertEquals(3, grid.navigateToEnd())
     }
-
 
     @Test
     fun testNavigateTop() {
