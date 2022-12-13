@@ -1,5 +1,8 @@
-import Day13.Answer
-import Day13.Packet
+package old
+
+import Util
+import old.Day13.Answer
+import old.Day13.Packet
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

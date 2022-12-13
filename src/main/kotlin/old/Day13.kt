@@ -1,3 +1,5 @@
+package old
+
 class Day13(private val debug : Boolean = false) {
     data class Packet(var value: String){
         fun parse(): List<Packet>{
@@ -31,7 +33,7 @@ class Day13(private val debug : Boolean = false) {
             return value.startsWith("[")
         }
 
-        fun convertToArray(): Packet{
+        fun convertToArray(): Packet {
             return Packet("[$value]")
         }
     }
@@ -50,7 +52,7 @@ class Day13(private val debug : Boolean = false) {
         return compare(Packet(left), Packet(right)).returnValue
     }
 
-    fun compare(left: Packet, right: Packet, level: Int=0) : Answer{
+    fun compare(left: Packet, right: Packet, level: Int=0) : Answer {
         printPadded(level, "Comparing $left vs $right")
 
         val rightParts = right.parse()
