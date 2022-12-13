@@ -7,7 +7,7 @@ class Day13(private val debug : Boolean = false) {
             if (stringToSplit.isEmpty()){
                 return listOf()
             }
-            var charactersSoFar = mutableListOf<Char>()
+            val charactersSoFar = mutableListOf<Char>()
             var innerCount = 0
             for (character in stringToSplit){
                 if (character == '['){
@@ -18,7 +18,7 @@ class Day13(private val debug : Boolean = false) {
                 }
                 if (innerCount==0 && character== ','){
                     result.add(Packet(charactersSoFar.joinToString("")))
-                    charactersSoFar = mutableListOf()
+                    charactersSoFar.clear()
                 } else{
                     charactersSoFar.add(character)
                 }
@@ -26,7 +26,6 @@ class Day13(private val debug : Boolean = false) {
             result.add(Packet(charactersSoFar.joinToString("")))
             return result
         }
-
 
         fun isArray(): Boolean{
             return value.startsWith("[")
