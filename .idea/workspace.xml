@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 13 - Complete">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day13.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Day14Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day14.txt" afterDir="false" />
+    <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 14 - Prep">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day13.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day14.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day13Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day13Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day14.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day14.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day14Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day14Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/day14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/day14.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,60 +80,59 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day13Test">
-    <configuration name="Day13Test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Day14Test">
+    <configuration name="Day14Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day13Test" />
+      <option name="MAIN_CLASS_NAME" value="Day14Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day13Test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day14Test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day13Test" />
+      <option name="MAIN_CLASS_NAME" value="Day14Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day13Test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day14Test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day13Test" />
+      <option name="MAIN_CLASS_NAME" value="Day14Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day13Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day14Test (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day13Test" />
+      <option name="MAIN_CLASS_NAME" value="Day14Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day13Test.testConvert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day14Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day13Test" />
-      <option name="METHOD_NAME" value="testConvert" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="Day14Test" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day13Test" />
-        <item itemvalue="JUnit.Day13Test.testConvert" />
-        <item itemvalue="JUnit.Day13Test (3)" />
-        <item itemvalue="JUnit.Day13Test (2)" />
-        <item itemvalue="JUnit.Day13Test (4)" />
+        <item itemvalue="JUnit.Day14Test" />
+        <item itemvalue="JUnit.Day14Test (1)" />
+        <item itemvalue="JUnit.Day14Test (5)" />
+        <item itemvalue="JUnit.Day14Test (4)" />
+        <item itemvalue="JUnit.Day14Test (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670966972323</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Day 14 - Prep">
+      <created>1670967111212</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670967111212</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +272,8 @@
     <MESSAGE value="Day 10 - Complete" />
     <MESSAGE value="Day 13 - Prep" />
     <MESSAGE value="Day 13 - Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 13 - Complete" />
+    <MESSAGE value="Day 14 - Prep" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 14 - Prep" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -348,6 +353,11 @@
           <url>file://$PROJECT_DIR$/src/test/kotlin/old/Day13Test.kt</url>
           <line>118</line>
           <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Day14.kt</url>
+          <line>83</line>
+          <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/test/kotlin/old/Day3Test.kt</url>
