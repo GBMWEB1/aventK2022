@@ -29,7 +29,7 @@ class Day15Test {
 
     @Test
     fun testIsInArea() {
-        val signal = of("Sensor at x=8, y=7: closest beacon is at x=2, y=10");
+        val signal = of("Sensor at x=8, y=7: closest beacon is at x=2, y=10")
         assertFalse(signal.isInArea(0,0))
         assertEquals(true, signal.isInArea(8,-2))
         assertEquals(false, signal.isInArea(8,-3))
@@ -43,7 +43,7 @@ class Day15Test {
 
     @Test
     fun testIsBeacon() {
-        val signal = of("Sensor at x=8, y=7: closest beacon is at x=2, y=10");
+        val signal = of("Sensor at x=8, y=7: closest beacon is at x=2, y=10")
         assertEquals(true, signal.isBeacon(2,10))
     }
 
@@ -57,17 +57,29 @@ class Day15Test {
     @Test
     fun testDisplaySample() {
         val grid = Day15.Grid(Util().readData("day15.txt"))
-        grid.display();
+        grid.display()
     }
 
     @Test
-    fun testCountCoverage() {
-        assertEquals(26, Day15.Grid(Util().readData("day15.txt")).countCoverage(10));
+    fun testPart1Sample() {
+        assertEquals(26, Day15.Grid(Util().readData("day15.txt")).countCoverage(10))
 
     }
 
     @Test
     fun testPart1() {
-        assertEquals(4961647, Day15.Grid(Util().readData("day15-2.txt")).countCoverage(2000000));
+        assertEquals(4961647, Day15.Grid(Util().readData("day15-2.txt")).countCoverage(2000000))
+    }
+
+    // part 2
+
+    @Test
+    fun testPart2Sample(){
+        assertEquals(56000011, Day15.Grid(Util().readData("day15.txt")).findDistressBeacon(20))
+    }
+
+    @Test
+    fun testPart2() {
+        assertEquals(12274327017867, Day15.Grid(Util().readData("day15-2.txt")).findDistressBeacon(4000000))
     }
 }
