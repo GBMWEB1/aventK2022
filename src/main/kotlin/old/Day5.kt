@@ -11,7 +11,6 @@ data class Move(val quantity: Int, val fromQueue: Int, val toQueue: Int){
     }
 }
 class Day5 {
-
     class BuildQueue(input: List<String>) {
 
         val queues = build(input)

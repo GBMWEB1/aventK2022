@@ -1,3 +1,5 @@
+package old
+
 import kotlin.math.abs
 
 class Day15 {
@@ -133,7 +135,7 @@ class Day15 {
                     x = sensors[0].jumpToEndOfLine(y)
                 }
             }
-            return -1
+            error("Oh dear.!")
         }
     }
 }

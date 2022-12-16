@@ -9,7 +9,7 @@ class Day12 {
         var left: Cell? = null
         var right: Cell? = null
 
-        fun canVisit(targetCell: Cell?): Boolean {
+        private fun canVisit(targetCell: Cell?): Boolean {
             if (targetCell == null || targetCell.navigated) {
                 return false
             }

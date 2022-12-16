@@ -153,7 +153,7 @@ class Day9 {
             moveKnots()
         }
 
-        fun displayState(){
+        private fun displayState(){
             val maxRows = maxOf(positions.maxOf { it.y },knots.maxOf { it.y })
             val maxCols = maxOf(positions.maxOf { it.x },knots.maxOf { it.x })
             for (row in maxRows downTo 0){

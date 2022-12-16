@@ -9,7 +9,6 @@ class Day2 {
         ROCK(1),
         PAPER(2),
         SCISSORS(3);
-
         companion object {
             fun decode (code: String) =
                 when (code) {
@@ -80,8 +79,7 @@ class Day2 {
         val opponentMove = Element.decode(parts[0])
         val expectedResult = RoundResult.decode(parts[1])
         val yourMove = chooseMove(opponentMove,expectedResult )
-        val result = battle(opponentMove,yourMove)
-        return score(result, yourMove)
+        return score(expectedResult, yourMove)
     }
 
     fun chooseMove(opponent: Element, result: RoundResult) : Element {

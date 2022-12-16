@@ -81,8 +81,8 @@ class Day11Test {
         val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"))
         Day11().processRounds(20, monkeys);
 
-        assertEquals(listOf<Int>(10, 12, 14, 26, 34), monkeys[0].getItemsInt())
-        assertEquals(listOf<Int>(245, 93, 53, 199, 115), monkeys[1].getItemsInt())
+        assertEquals(listOf(10, 12, 14, 26, 34), monkeys[0].getItemsInt())
+        assertEquals(listOf(245, 93, 53, 199, 115), monkeys[1].getItemsInt())
         assertEquals(listOf<Int>(), monkeys[2].getItemsInt())
         assertEquals(listOf<Int>(), monkeys[3].getItemsInt())
     }

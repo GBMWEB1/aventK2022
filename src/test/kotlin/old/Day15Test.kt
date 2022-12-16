@@ -1,4 +1,7 @@
-import Day15.Sensor.Companion.of
+package old
+
+import Util
+import old.Day15.Sensor.Companion.of
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Test

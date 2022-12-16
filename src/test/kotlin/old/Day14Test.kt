@@ -6,15 +6,13 @@ import org.junit.jupiter.api.Test
 
 class Day14Test {
 
-    //498,4 -> 498,6 -> 496,6
-
     @Test
     fun testDrawSingle(){
         val cave = Day14.Cave()
         cave.addPath("498,4 -> 498,6 -> 496,6")
-        assertEquals(496, cave.maxleft)
-        assertEquals(500, cave.maxRight)
-        assertEquals(6, cave.bottomCave)
+        assertEquals(496, cave.grid.maxLeft)
+        assertEquals(500, cave.grid.maxRight)
+        assertEquals(6, cave.grid.getBottom())
         assertEquals(listOf(
             "....+",
             ".....",
@@ -22,7 +20,7 @@ class Day14Test {
             ".....",
             "..#..",
             "..#..",
-            "###.."), cave.getDisplay())
+            "###.."), cave.grid.getDisplay())
     }
 
     @Test
@@ -31,9 +29,9 @@ class Day14Test {
         cave.addPath("498,4 -> 498,6 -> 496,6")
         cave.addPath("503,4 -> 502,4 -> 502,9 -> 494,9")
 
-        assertEquals(494, cave.maxleft)
-        assertEquals(503, cave.maxRight)
-        assertEquals(9, cave.bottomCave)
+        assertEquals(494, cave.grid.maxLeft)
+        assertEquals(503, cave.grid.maxRight)
+        assertEquals(9, cave.grid.getBottom())
         assertEquals(listOf(
         "......+...",
         "..........",
@@ -44,7 +42,7 @@ class Day14Test {
         "..###...#.",
         "........#.",
         "........#.",
-        "#########."), cave.getDisplay())
+        "#########."), cave.grid.getDisplay())
     }
 
     @Test
@@ -63,7 +61,7 @@ class Day14Test {
             "..###...#.",
             "........#.",
             "......o.#.",
-            "#########."), cave.getDisplay())
+            "#########."), cave.grid.getDisplay())
     }
 
     @Test
@@ -83,7 +81,7 @@ class Day14Test {
             "..###...#.",
             "........#.",
             ".....oo.#.",
-            "#########."), cave.getDisplay())
+            "#########."), cave.grid.getDisplay())
     }
 
     @Test
@@ -103,7 +101,7 @@ class Day14Test {
             "..###...#.",
             "......o.#.",
             "....oooo#.",
-            "#########."), cave.getDisplay())
+            "#########."), cave.grid.getDisplay())
     }
 
     @Test
@@ -123,7 +121,7 @@ class Day14Test {
         "..###ooo#.",
         "....oooo#.",
         "...ooooo#.",
-        "#########."), cave.getDisplay())
+        "#########."), cave.grid.getDisplay())
     }
 
     @Test
@@ -167,10 +165,10 @@ class Day14Test {
         ".........................",
         "#########################")
 
-        assertEquals(11, cave.bottomCave)
-        assertEquals(494-6, cave.maxleft)
-        assertEquals(503+9, cave.maxRight)
-        assertEquals(result,cave.getDisplay())
+        assertEquals(11, cave.grid.getBottom())
+        assertEquals(494-6, cave.grid.maxLeft)
+        assertEquals(503+9, cave.grid.maxRight)
+        assertEquals(result,cave.grid.getDisplay())
     }
 
     @Test

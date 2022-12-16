@@ -2,7 +2,7 @@ package old
 
 class Day4 {
 
-    fun String.expandIntSet(): Set<Int> {
+    private fun String.expandIntSet(): Set<Int> {
         val parts = this.split("-")
         return  (parts[0].toInt() .. parts[1].toInt()).toSet()
     }
