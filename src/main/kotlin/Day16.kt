@@ -96,11 +96,4 @@ class Day16 {
         val maxIdx = tunnelValues.indices.maxBy { tunnelValues[it] }
         state.currentValve = state.currentValve.tunnels[maxIdx]
     }
-
-    fun passMinutes(state : State, allValves: List<Valve>, mins: Int){
-        repeat(mins){
-            passMinute(state, allValves)
-        }
-    }
-
 }
