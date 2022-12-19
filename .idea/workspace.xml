@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 15">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day17.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Day17Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day17.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day18.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Day18Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day18-2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day18.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day16.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day16.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,47 +87,47 @@
       <recent name="old" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day17Test">
-    <configuration name="Day17Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Day18Test">
+    <configuration name="Day18Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day17Test" />
+      <option name="MAIN_CLASS_NAME" value="Day18Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day17Test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day18Test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day17Test" />
+      <option name="MAIN_CLASS_NAME" value="Day18Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day17Test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day18Test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day17Test" />
+      <option name="MAIN_CLASS_NAME" value="Day18Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day17Test (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day18Test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day17Test" />
+      <option name="MAIN_CLASS_NAME" value="Day18Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day17Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day18Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day17Test" />
+      <option name="MAIN_CLASS_NAME" value="Day18Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day17Test" />
-        <item itemvalue="JUnit.Day17Test (3)" />
-        <item itemvalue="JUnit.Day17Test (4)" />
-        <item itemvalue="JUnit.Day17Test (5)" />
-        <item itemvalue="JUnit.Day17Test (1)" />
+        <item itemvalue="JUnit.Day18Test" />
+        <item itemvalue="JUnit.Day18Test (4)" />
+        <item itemvalue="JUnit.Day18Test (3)" />
+        <item itemvalue="JUnit.Day18Test (2)" />
+        <item itemvalue="JUnit.Day18Test (1)" />
       </list>
     </recent_temporary>
   </component>
