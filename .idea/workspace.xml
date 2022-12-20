@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 15">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day18.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Day18Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day18-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day18.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day19.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/Day19Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day19-2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day19.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,59 +87,62 @@
       <recent name="old" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day18Test">
-    <configuration name="Day18Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Day19Test">
+    <configuration name="Day19Test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day18Test" />
+      <option name="MAIN_CLASS_NAME" value="Day19Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day18Test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day19Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day18Test" />
+      <option name="MAIN_CLASS_NAME" value="Day19Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day18Test (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day19Test.testBluePrint1Part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day18Test" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Day19Test" />
+      <option name="METHOD_NAME" value="testBluePrint1Part2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day18Test (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day19Test.testBluePrint2Part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day18Test" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Day19Test" />
+      <option name="METHOD_NAME" value="testBluePrint2Part2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day18Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day19Test.testValueForPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day18Test" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Day19Test" />
+      <option name="METHOD_NAME" value="testValueForPart2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day18Test" />
-        <item itemvalue="JUnit.Day18Test (4)" />
-        <item itemvalue="JUnit.Day18Test (3)" />
-        <item itemvalue="JUnit.Day18Test (2)" />
-        <item itemvalue="JUnit.Day18Test (1)" />
+        <item itemvalue="JUnit.Day19Test" />
+        <item itemvalue="JUnit.Day19Test.testValueForPart2" />
+        <item itemvalue="JUnit.Day19Test.testBluePrint2Part2" />
+        <item itemvalue="JUnit.Day19Test.testBluePrint1Part2" />
+        <item itemvalue="JUnit.Day19Test (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -436,6 +439,11 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/Day17.kt</url>
           <line>385</line>
           <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Day19.kt</url>
+          <line>137</line>
+          <option name="timeStamp" value="217" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/test/kotlin/old/Day3Test.kt</url>
