@@ -1,3 +1,6 @@
+package old
+
+import Util
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.assertEquals
 

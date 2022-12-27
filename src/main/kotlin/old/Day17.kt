@@ -1,3 +1,5 @@
+package old
+
 class Day17 {
 
     enum class Rock(private val formation : List<String>){

@@ -1,14 +1,13 @@
-import old.Day15
-import old.Day15.Sensor.Companion.of
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertFalse
+package old
+
+import Util
 import org.junit.jupiter.api.Test
 
 class Day16Test {
 
 //    @Test
 //    fun testCreate() {
-//        val tunnels = Util().readData("day16.txt").map { Day16.Valve.of(it) }
+//        val tunnels = Util().readData("day16.txt").map { old.Day16.Valve.of(it) }
 //        tunnels.forEach { it.join(tunnels) }
 //        assertEquals(0, tunnels[0].flow)
 //        assertEquals("AA", tunnels[0].name)

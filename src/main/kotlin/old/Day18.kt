@@ -1,3 +1,5 @@
+package old
+
 class Day18 {
 
     data class Cube(val x: Int, val y:Int, val z: Int){
@@ -62,7 +64,7 @@ class Day18 {
             return pondDimension.encloses(cube)
         }
 
-        private fun getEdgeOfPond(): Cube{
+        private fun getEdgeOfPond(): Cube {
             return pondDimension.getStart()
         }
 

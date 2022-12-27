@@ -1,3 +1,5 @@
+package old
+
 class Day19 {
 
     data class BluePrint(
