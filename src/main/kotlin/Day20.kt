@@ -24,17 +24,16 @@ class Day20 {
             var nextPos = currentPos
 
             if (specialNumber!!.value>0){
-                // moving forward.
-                nextPos = currentPos + specialNumber.value.mod(values.size-1)
-                if (nextPos>values.size-1){
-                    nextPos -= (values.size - 1)
-                }
-
+                nextPos += specialNumber.value.mod(values.size - 1)
             } else if (specialNumber.value<0) {
-                nextPos = currentPos - (abs(specialNumber.value).mod(values.size-1))
-                if (nextPos<0){
-                    nextPos += (values.size - 1)
-                }
+                nextPos -= (abs(specialNumber.value).mod(values.size - 1))
+            }
+
+            if (nextPos<0){
+                nextPos += (values.size - 1)
+            }
+            else if (nextPos>values.size-1){
+                nextPos -= (values.size - 1)
             }
 
             values.remove(specialNumber)
@@ -72,6 +71,4 @@ class Day20 {
             getNumberAtPosition(3000)
         }
     }
-
-
 }
