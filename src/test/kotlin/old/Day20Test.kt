@@ -1,4 +1,7 @@
-import Day20.MixingFile
+package old
+
+import Util
+import old.Day20.MixingFile
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
