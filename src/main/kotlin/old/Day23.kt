@@ -1,9 +1,10 @@
+package old
+
 import kotlin.math.abs
 
 class Day23 {
 
     data class Elf(var x:Int, var y: Int){
-
         var propX: Int? = null
         var propY: Int? = null
     }
@@ -29,7 +30,7 @@ class Day23 {
             }
         }
 
-        private fun getDirection(): Direction{
+        private fun getDirection(): Direction {
             val dir = directions.removeFirst()
             directions.add(dir)
             return dir

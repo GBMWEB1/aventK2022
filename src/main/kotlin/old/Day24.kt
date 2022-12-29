@@ -1,3 +1,5 @@
+package old
+
 class Day24 {
 
     data class ValleyDimensions(val maxX: Int, val maxY: Int, val startX : Int, val endX : Int)

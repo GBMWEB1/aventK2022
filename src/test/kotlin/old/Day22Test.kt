@@ -1,4 +1,7 @@
-import Day22.Position
+package old
+
+import Util
+import old.Day22.Position
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

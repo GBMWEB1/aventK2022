@@ -1,3 +1,5 @@
+package old
+
 class Day22 {
     class JungleMap(val map: List<MutableList<Char>>) {
 
@@ -144,7 +146,7 @@ class Day22 {
         var cube: Boolean = false
 
         companion object{
-            fun fromList(list: List<String>, debug: Boolean = false): Navigator{
+            fun fromList(list: List<String>, debug: Boolean = false): Navigator {
                 val jungleMapList = list.subList(0, list.indexOf(""))
                 return Navigator(
                     JungleMap.fromList(jungleMapList),
@@ -158,7 +160,7 @@ class Day22 {
             println("")
         }
 
-        private fun teleportMethodOne(nextPosition: Position) : Position{
+        private fun teleportMethodOne(nextPosition: Position) : Position {
 
             var newX = nextPosition.x
             var newY = nextPosition.y
@@ -176,7 +178,7 @@ class Day22 {
         //    'Left' -> Top of 3 - Facing Down
         //    'Above -> Top of 2 - Facing Down
         //    'Right -> Right of 6, Facing Left
-        fun teleport1(pos:Position): Position {
+        fun teleport1(pos: Position): Position {
             val cubeSize = jungleMap.getCubeSize()
             return when (pos.direction) {
                 '<' -> Position(cubeSize + pos.y, cubeSize, 'v')
@@ -190,7 +192,7 @@ class Day22 {
         //    'Left' -> Bottom of 6, facing up
         //    'Above -> Top of 1 - Facing Down
         //    'Below' -> Bottom of 5 - Facing Up
-        fun teleport2(pos:Position): Position{
+        fun teleport2(pos: Position): Position {
             val cubeSize = jungleMap.getCubeSize()
             return when (pos.direction) {
                 '<' -> Position(cubeSize*4 -1 - pos.y.mod(cubeSize), cubeSize*3-1, '^')
@@ -203,7 +205,7 @@ class Day22 {
         // 3
         //    'Above -> Left of 1 - Facing Right
         //    'Below' -> Left of 5 - Facing Right
-        fun teleport3(pos:Position): Position{
+        fun teleport3(pos: Position): Position {
             val cubeSize = jungleMap.getCubeSize()
             return when (pos.direction) {
                 '^' -> Position(cubeSize*2, pos.x - cubeSize, 'v')
@@ -213,7 +215,7 @@ class Day22 {
         }
         // 4
         //    'Right -> Top of 6, facing down
-        fun teleport4(pos:Position): Position{
+        fun teleport4(pos: Position): Position {
             val cubeSize = jungleMap.getCubeSize()
             return when (pos.direction) {
                 '>' -> Position(cubeSize*4-1 - pos.y.mod(cubeSize), cubeSize*2, 'v')
@@ -224,7 +226,7 @@ class Day22 {
         // 5
         //    'Left' -> Bottom of 3, facing up
         //    'Below' -> Bottom of 2 - Facing Up
-        fun teleport5(pos:Position): Position{
+        fun teleport5(pos: Position): Position {
             val cubeSize = jungleMap.getCubeSize()
             return when (pos.direction) {
                 '<' -> Position(cubeSize *2-1 -pos.y.mod(cubeSize), cubeSize *2-1, '^')
@@ -233,7 +235,7 @@ class Day22 {
             }
         }
 
-        fun teleport6(pos:Position): Position {
+        fun teleport6(pos: Position): Position {
             val cubeSize = jungleMap.getCubeSize()
             return when (pos.direction) {
                 '>' -> Position(cubeSize*3-1, cubeSize - 1 - pos.y.mod(cubeSize), '<')
@@ -243,7 +245,7 @@ class Day22 {
             }
         }
 
-        private fun teleportCube() : Position{
+        private fun teleportCube() : Position {
             val newPos = when (val cubeFace = jungleMap.getCubeFace(position.x, position.y)){
                 1 ->teleport1(position)
                 2 ->teleport2(position)

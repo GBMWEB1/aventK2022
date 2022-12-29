@@ -1,3 +1,5 @@
+package old
+
 class Day25 {
 
     fun toDecimal(input: String): Long {
