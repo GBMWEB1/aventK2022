@@ -46,16 +46,16 @@ class Day21 {
             throw Error("Shouldn't Yell")
         }
 
-        fun partsEqual(): GUESS_RESULT {
+        fun partsEqual(): GuessResult {
             val diff = operationValues[operationCodes[0]]!! - operationValues[operationCodes[1]]!!
             println("Comparing ${operationValues[operationCodes[0]]!!} and ${operationValues[operationCodes[1]]!!} - $diff ")
 
             if (diff> 0){
-                return GUESS_RESULT.TO_HIGH
+                return GuessResult.TO_HIGH
             } else if (diff < 0){
-                return GUESS_RESULT.TO_LOW
+                return GuessResult.TO_LOW
             }
-            return GUESS_RESULT.PUKKA
+            return GuessResult.PUKKA
         }
 
         companion object{
@@ -95,13 +95,13 @@ class Day21 {
         }
     }
 
-    enum class GUESS_RESULT{
+    enum class GuessResult{
         TO_LOW,
         TO_HIGH,
         PUKKA
     }
 
-    fun getHumanValue(readData: List<String>, humanValue: Long): GUESS_RESULT {
+    private fun getHumanValue(readData: List<String>, humanValue: Long): GuessResult {
         val monkeys = readData.map { Monkey.of(it) }.toMutableList()
         // overide human value
         monkeys.find { it.code=="humn" }!!.value=humanValue
@@ -120,7 +120,7 @@ class Day21 {
         }
     }
 
-    fun nextGuess(lowerBound: Long, upperBound: Long): Long{
+    private fun nextGuess(lowerBound: Long, upperBound: Long): Long{
         return lowerBound + ((upperBound-lowerBound)/2)
     }
 
@@ -128,17 +128,17 @@ class Day21 {
         var lowerBound = 0L
         var upperBound = Long.MAX_VALUE / 100000
         while (true){
-            var valueToGuess = nextGuess(lowerBound, upperBound)
+            val valueToGuess = nextGuess(lowerBound, upperBound)
             println("Guessing $valueToGuess")
-            val result = getHumanValue(readData, valueToGuess);
+            val result = getHumanValue(readData, valueToGuess)
 
-            if (result == GUESS_RESULT.TO_LOW){
+            if (result == GuessResult.TO_LOW){
                 upperBound = valueToGuess
             }
-            if (result == GUESS_RESULT.TO_HIGH){ // swapped over for part 2
+            if (result == GuessResult.TO_HIGH){ // swapped over for part 2
                 lowerBound = valueToGuess
             }
-            if (result == GUESS_RESULT.PUKKA){
+            if (result == GuessResult.PUKKA){
                 return valueToGuess
             }
         }

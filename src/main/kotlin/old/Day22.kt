@@ -1,4 +1,6 @@
-import Day22.Direction.*
+package old
+
+import old.Day22.Direction.*
 
 class Day22 {
 
@@ -48,7 +50,7 @@ class Day22 {
 
         private val faces = mutableListOf<Face>()
 
-        fun getFace(pos: Int): Face{
+        fun getFace(pos: Int): Face {
             return faces[pos-1]
         }
 

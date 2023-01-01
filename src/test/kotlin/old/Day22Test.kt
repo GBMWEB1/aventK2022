@@ -1,6 +1,7 @@
-import Day22
+package old
+
 import Util
-import Day22.Position
+import old.Day22.Position
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
@@ -20,14 +21,14 @@ class Day22Test {
     @Test
     fun testProcessAllInstructions(){
         val navigator = Day22.Navigator.fromList(Util().readData("day22.txt"), true)
-        navigator.processAllInstructions();
+        navigator.processAllInstructions()
         assertEquals(6032, navigator.getPassword())
     }
 
     @Test
     fun testPart1(){
         val navigator = Day22.Navigator.fromList(Util().readData("day22-2.txt"), false)
-        navigator.processAllInstructions();
+        navigator.processAllInstructions()
         assertEquals(103224, navigator.getPassword())
     }
 
@@ -36,7 +37,7 @@ class Day22Test {
     fun testProcessAllInstructionsPart2(){
         val navigator = Day22.Navigator.fromList(Util().readData("day22.txt"), true)
         navigator.setCube1()
-        navigator.processAllInstructions();
+        navigator.processAllInstructions()
         assertEquals(5031, navigator.getPassword())
     }
 
@@ -167,7 +168,7 @@ class Day22Test {
     fun testPart2(){
         val navigator = Day22.Navigator.fromList(Util().readData("day22-2.txt"), false)
         navigator.setCube2()
-        navigator.processAllInstructions();
+        navigator.processAllInstructions()
         assertEquals(189097, navigator.getPassword())
     }
 }

@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 20">
+    <list default="true" id="2346d192-0d90-4a78-98b0-f6a5f77f7b1a" name="Changes" comment="Day 22">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day20.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day20.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day22.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day22.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day20Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day20Test.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/old/Day22Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day22Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day22.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day22.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Util.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day10.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day10.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day12.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day12.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day16.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day16.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day18.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day18.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day21.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day21.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/old/Day24.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Day24.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Day22Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day22Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/old/Day11Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day11Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/old/Day16Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Day16Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/old/Day20Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day20Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/old/Day21Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/old/Day21Test.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +85,8 @@
       <recent name="C:\dev\advent2022\aventK2022\src\main\kotlin\old" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="" />
       <recent name="old" />
+      <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
@@ -87,51 +96,55 @@
       <recent name="old" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day22Test">
-    <configuration name="Day22Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Day16Test (1)">
+    <configuration name="Day12Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day22Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="old.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="old" />
+      <option name="MAIN_CLASS_NAME" value="old.Day12Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day22Test.testPart1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day16Test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day22Test" />
-      <option name="METHOD_NAME" value="testPart1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="Day16Test" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day22Test.testPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day16Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day22Test" />
+      <option name="MAIN_CLASS_NAME" value="Day16Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day16Test.testPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aventK2022" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Day16Test" />
       <option name="METHOD_NAME" value="testPart2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day22Test.testProcessAllInstructionsPart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day16Test.testSamplePart2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aventK2022" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day22Test" />
-      <option name="METHOD_NAME" value="testProcessAllInstructionsPart2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day22Test.testTeleportFrom6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aventK2022" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Day22Test" />
-      <option name="METHOD_NAME" value="testTeleportFrom6" />
+      <option name="MAIN_CLASS_NAME" value="Day16Test" />
+      <option name="METHOD_NAME" value="testSamplePart2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day22Test" />
-        <item itemvalue="JUnit.Day22Test.testPart2" />
-        <item itemvalue="JUnit.Day22Test.testProcessAllInstructionsPart2" />
-        <item itemvalue="JUnit.Day22Test.testPart1" />
-        <item itemvalue="JUnit.Day22Test.testTeleportFrom6" />
+        <item itemvalue="JUnit.Day16Test (1)" />
+        <item itemvalue="JUnit.Day12Test" />
+        <item itemvalue="JUnit.Day16Test" />
+        <item itemvalue="JUnit.Day16Test.testPart2" />
+        <item itemvalue="JUnit.Day16Test.testSamplePart2" />
       </list>
     </recent_temporary>
   </component>
@@ -368,7 +381,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/old/Day21Test.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/old/Day21Test.kt</url>
           <line>14</line>
           <option name="timeStamp" value="252" />
         </line-breakpoint>
@@ -381,17 +394,17 @@
           <option name="timeStamp" value="253" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Day22.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/old/Day22.kt</url>
           <line>459</line>
           <option name="timeStamp" value="267" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Day22.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/old/Day22.kt</url>
           <line>175</line>
           <option name="timeStamp" value="268" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/old/Day24Test.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/old/Day24Test.kt</url>
           <line>28</line>
           <option name="timeStamp" value="294" />
         </line-breakpoint>
@@ -401,12 +414,12 @@
           <option name="timeStamp" value="296" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/old/Day20Test.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/old/Day20Test.kt</url>
           <line>42</line>
           <option name="timeStamp" value="300" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/old/Day20Test.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/old/Day20Test.kt</url>
           <line>37</line>
           <option name="timeStamp" value="302" />
         </line-breakpoint>
@@ -416,9 +429,14 @@
           <option name="timeStamp" value="303" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/Day22Test.kt</url>
-          <line>158</line>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/old/Day22Test.kt</url>
+          <line>157</line>
           <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Day16.kt</url>
+          <line>136</line>
+          <option name="timeStamp" value="328" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

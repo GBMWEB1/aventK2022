@@ -56,7 +56,7 @@ class Day18 {
             cubeDimension.z.first-1 to cubeDimension.z.second+1)
 
         fun calculateVisibleSides(): Int {
-            val totalCubesAndAir = airPockets + cubes;
+            val totalCubesAndAir = airPockets + cubes
             return cubes.sumOf { 6 - it.countNeighbours(totalCubesAndAir) }
         }
 

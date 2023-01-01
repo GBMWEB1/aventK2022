@@ -2,7 +2,7 @@ package old
 
 class Day12 {
 
-    data class Cell(val row: Int, val col: Int, val character: Char, val isStart: Boolean, val isEnd: Boolean) {
+    data class Cell(val character: Char, val isStart: Boolean, val isEnd: Boolean) {
         var navigated: Boolean = false
         var top: Cell? = null
         var bottom: Cell? = null
@@ -52,21 +52,18 @@ class Day12 {
         }
 
         companion object {
-            fun of(character: Char, row: Int, col: Int): Cell {
+            fun of(character: Char): Cell {
                 val isEnd = character == 'E'
                 val isStart = character == 'S'
-                return Cell(row, col, character, isStart, isEnd)
+                return Cell(character, isStart, isEnd)
             }
         }
     }
 
     class Grid(input: List<String>) {
-
-        private val cells = input.mapIndexed { row, line ->
+        private val cells = input.map { line ->
             line.toCharArray()
-                .mapIndexed { col, character ->
-                    Cell.of(character, row, col)
-                }
+                .map{ Cell.of(it) }
                 .toList()
         }
 
@@ -118,5 +115,4 @@ class Day12 {
             return navigateToEnd(startCells)
         }
     }
-
 }

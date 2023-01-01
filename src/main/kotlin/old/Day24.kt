@@ -75,7 +75,6 @@ class Day24 {
             chars.add('#')
             return chars.joinToString("")
         }
-
         fun display(){
             println()
             println(getDisplayStartEnd(dimensions.startX))

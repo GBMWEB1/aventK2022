@@ -11,7 +11,6 @@ class Day10 {
 
         private var signal = 0
 
-        // expandTheListOfInstructions to include "noop" before all "addx". Moved up for readability
         private fun processInstructions(input: List<String> ): ArrayDeque<String>{
 
             val result = ArrayDeque<String>()

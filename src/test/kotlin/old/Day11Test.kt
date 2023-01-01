@@ -68,7 +68,7 @@ class Day11Test {
     @Test
     fun testRound1() {
         val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"))
-        Day11().processRound(monkeys);
+        Day11().processRound(monkeys)
 
         assertEquals(listOf(20,23,27,26), monkeys[0].getItemsInt())
         assertEquals(listOf(2080,25,167,207,401, 1046), monkeys[1].getItemsInt())
@@ -79,7 +79,7 @@ class Day11Test {
     @Test
     fun testRound20() {
         val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"))
-        Day11().processRounds(20, monkeys);
+        Day11().processRounds(20, monkeys)
 
         assertEquals(listOf(10, 12, 14, 26, 34), monkeys[0].getItemsInt())
         assertEquals(listOf(245, 93, 53, 199, 115), monkeys[1].getItemsInt())
@@ -89,7 +89,7 @@ class Day11Test {
     @Test
     fun testRound20ItemsProcessed() {
         val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"))
-        Day11().processRounds(20, monkeys);
+        Day11().processRounds(20, monkeys)
 
         assertEquals(101, monkeys[0].itemsProcessed)
         assertEquals(95, monkeys[1].itemsProcessed)
@@ -100,21 +100,21 @@ class Day11Test {
     @Test
     fun testRound20MonkeyBusiness() {
         val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"))
-        Day11().processRounds(20, monkeys);
+        Day11().processRounds(20, monkeys)
         assertEquals(10605, Day11().getMonkeyBusiness(monkeys))
     }
 
     @Test
     fun testPart1() {
         val monkeys = Day11().createMonkeys(Util().readData("day11-2.txt"))
-        Day11().processRounds(20, monkeys);
+        Day11().processRounds(20, monkeys)
         assertEquals(54752, Day11().getMonkeyBusiness(monkeys))
     }
 
     @Test
     fun testPart2Round1() {
         val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"), false)
-        Day11().processRounds(1, monkeys);
+        Day11().processRounds(1, monkeys)
 
         assertEquals(2, monkeys[0].itemsProcessed)
         assertEquals(4, monkeys[1].itemsProcessed)
@@ -125,7 +125,7 @@ class Day11Test {
     @Test
     fun testPart2Round20() {
         val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"), false)
-        Day11().processRounds(20, monkeys);
+        Day11().processRounds(20, monkeys)
 
         assertEquals(99, monkeys[0].itemsProcessed)
         assertEquals(97, monkeys[1].itemsProcessed)
@@ -136,7 +136,7 @@ class Day11Test {
     @Test
     fun testPart2Round1000() {
         val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"), false)
-        Day11().processRounds(1000, monkeys);
+        Day11().processRounds(1000, monkeys)
 
         assertEquals(5204, monkeys[0].itemsProcessed)
         assertEquals(4792, monkeys[1].itemsProcessed)
@@ -147,7 +147,7 @@ class Day11Test {
     @Test
     fun testPart2Round10000() {
         val monkeys = Day11().createMonkeys(Util().readData("day11-1.txt"), false)
-        Day11().processRounds(10000, monkeys);
+        Day11().processRounds(10000, monkeys)
 
         assertEquals(52166, monkeys[0].itemsProcessed)
         assertEquals(47830, monkeys[1].itemsProcessed)
@@ -159,7 +159,7 @@ class Day11Test {
     @Test
     fun testPart2() {
         val monkeys = Day11().createMonkeys(Util().readData("day11-2.txt"), false)
-        Day11().processRounds(10000, monkeys);
+        Day11().processRounds(10000, monkeys)
         assertEquals(13606755504, Day11().getMonkeyBusiness(monkeys))
     }
 }

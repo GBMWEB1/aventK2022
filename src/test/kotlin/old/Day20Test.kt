@@ -73,7 +73,6 @@ class Day20Test {
     fun testPart1(){
         val mixingFile = MixingFile(Util().readData("day20.txt").map { it.toInt() })
         mixingFile.processAll()
-        // 2637 is to high
         assertEquals(872, mixingFile.getGroveCoordinates())
     }
 

@@ -13,7 +13,6 @@ class Day21Test {
 
     @Test
     fun testPart1(){
-        //1334684734 is to low
         assertEquals(379578518396784, Day21().getRoot(Util().readData("day21-2.txt")))
     }
 
